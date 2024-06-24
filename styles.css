@@ -8,7 +8,7 @@
   --wenge-brown: hsl(30, 10%, 34%);
   --dark-charcoal: hsl(24, 5%, 18%);
 
-  --paragraph-font-size: 1rem;
+  --paragraph-font-size: .875rem;
 
   --font-light: 400;
   --font-medium: 600;
@@ -36,16 +36,16 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 40rem;
+  max-width: 39rem;
   background-color: var(--white);
   padding: 2rem;
   margin: 3rem auto;
   border-radius: 20px;
   font-family: "Outfit", sans-serif;
+  color: var(--wenge-brown);
 }
 
 h1,
-h2,
 h3,
 h4,
 h5 {
@@ -54,6 +54,8 @@ h5 {
 
 h1 {
   color: var(--dark-charcoal);
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
 }
 
 h2 {
@@ -66,11 +68,62 @@ h5 {
   color: var(--nutmeg);
 }
 
+h3,
+h4,
+h5 {
+  font-size: 1.5rem;
+  font-weight: var(--font-light);
+}
+
 main img {
   width: 100%;
   height: 16rem;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.header-paragraph {
+  font-size: var(--paragraph-font-size);
+}
+
+.prep {
+  background-color: var(--rose-white);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.prep h2 {
+  font-size: 1.125rem;
+}
+
+.prep ul li {
+  margin: 0.5rem 0 0.5rem 1.5rem;
+  font-size: var(--paragraph-font-size);
+  padding-left: .9375rem;
+}
+
+.prep ul li:last-of-type {
+  margin: 0.5rem 0 0rem 1.5rem;
+}
+
+.ingredients {
+  margin: 0 0 1rem 0;
+}
+
+.ingredients ul li {
+  margin: 0.5rem 0 0.5rem 1.7rem;
+  font-size: var(--paragraph-font-size);
+  padding-left: .625rem;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px solid var(--light-grey);
+}
+
+.instructions {
+  margin: 1rem 0 1rem 0;
 }
 
 @media screen and (max-width: 20rem) {
