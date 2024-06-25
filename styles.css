@@ -107,7 +107,15 @@ main img {
   margin: 0.5rem 0 0rem 1.5rem;
 }
 
+.prep ul li span {
+  font-weight: var(--font-heavy);
+}
+
 .ingredients {
+  margin: 0 0 1rem 0;
+}
+
+.ingredients h3 {
   margin: 0 0 1rem 0;
 }
 
@@ -115,6 +123,11 @@ main img {
   margin: 0.5rem 0 0.5rem 1.7rem;
   font-size: var(--paragraph-font-size);
   padding-left: .625rem;
+}
+
+.ingredients ul li::marker {
+  font-weight: var(--font-heavy);
+  color: var(--nutmeg);
 }
 
 hr {
@@ -126,19 +139,78 @@ hr {
   margin: 1rem 0 1rem 0;
 }
 
-@media screen and (max-width: 20rem) {
+.instructions h4 {
+  margin: 0 0 1rem 0;
+}
+
+.instructions ol li {
+  margin: 0.75rem 0 0.75rem 1.7rem;
+  font-size: var(--paragraph-font-size);
+  padding-left: .625rem;
+}
+
+.instructions ol li::marker {
+  font-weight: var(--font-heavy);
+  color: var(--nutmeg);
+  font-family: "Outfit", sans-serif;
+}
+
+.instructions ol li span {
+  font-weight: var(--font-heavy);
+}
+
+.nutrition h5 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.nutrition p {
+  font-size: var(--paragraph-font-size);
+  margin: 0 0 1rem 0;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table tr td {
+  padding: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.nutrition table tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition table tr:last-child {
+  border-bottom: 0px;
+}
+
+.nutrition table tr td:nth-child(1) {
+  font-weight: var(--font-medium);
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.nutrition table tr td:nth-child(2) {
+  color: var(--nutmeg);
+  font-weight: var(--font-medium);
+}
+
+@media screen and (max-width: 26.5625rem) {
 
   main {
     margin: 0;
     border-radius: 0;
-    padding: 0rem;
+    padding: 1.5rem;
   }
 
   main img {
-    width: 100%;
+    width: calc(100% + 3rem);
     height: 10rem;
     object-fit: cover;
     border-radius: 0;
+    margin: -1.5rem -1.5rem 0 -1.5rem;
   }
 
 }
