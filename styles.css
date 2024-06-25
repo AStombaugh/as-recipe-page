@@ -36,7 +36,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 39rem;
+  max-width: 41rem;
   background-color: var(--white);
   padding: 2rem;
   margin: 10rem auto;
@@ -54,7 +54,8 @@ h5 {
 
 h1 {
   color: var(--dark-charcoal);
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: var(--font-light);
   margin: 1rem 0 1rem 0;
 }
 
@@ -77,7 +78,7 @@ h5 {
 
 main img {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -89,7 +90,7 @@ main img {
 .prep {
   background-color: var(--rose-white);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 1.5rem 0;
 }
 
@@ -187,7 +188,7 @@ hr {
 }
 
 .nutrition table tr td:nth-child(1) {
-  font-weight: var(--font-medium);
+  font-weight: var(--font-light);
   padding-left: 2rem;
   width: 50%;
 }
